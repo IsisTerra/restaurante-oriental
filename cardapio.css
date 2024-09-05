@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68deg, #ffd5b3 16.62%, rgb(222, 158, 39) 85.61%);
+}
+
+a {
+    color: inherit;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    text-shadow: 2px 2px 3px black;
+    border-bottom: 0.4px solid #FFF2E7;
+}
+
+.cabecalho-texto {
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.principal {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.prato {
+    border: 1px solid #ffd5b3;
+    border-left: 3px solid #ee8a37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    gap: 3px;
+    width: 500px;
+    height: 450px;
+}
+
+.prato-imagem {
+    width: 200px;
+    height: 150px;
+}
+
+.prato-titulo {
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    font-size: 23px;
+    text-shadow: 3px -2px 3px black;
+}
+
+.prato-descricao {
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    width: 480px;
+    height: 60px;
+    text-shadow: 3px 1px 3px black;
+}
+
+.prato-botao {
+    background-color: rgb(206, 154, 75);
+    color: #FFF2E7;
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px black;
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prato-botao:hover {
+    opacity: 0.8;
+}
+
+#btnPedirTemaki,
+#btnPedirSashimi,
+#btnPedirNiguiri,
+#btnPedirHotRoll,
+#btnPedirSushi,
+#btnPedirYakisoba {
+    background-color: #FFF2E7;
+    color: rgb(206, 154, 75);
+    font-weight: 600;
+    margin-left: 5px;
+}

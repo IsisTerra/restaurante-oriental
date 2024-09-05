@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="informacoes.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho-texto">Mirai Sushi</h2>
+        <nav class="cabecalho-texto">
+            <div class="cabecalho-texto-inicial">
+                <a href="index.html">Página Inicial</a>
+            </div>
+            <div class="cabecalho-texto-inicial">
+                <a href="cardapio.html">Cardápio</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="artigo">
+            <h2 class="artigo-titulo">Hot Roll</h2>
+            <img class="artigo-imagem"
+                src="https://s3.us-west-2.amazonaws.com/cdn.sushiinkasa/upload/combinado_hot_especial_20pcs_14102020091744.jpg"
+                alt="Foto Hot Roll">
+            <h3 class="artigo-descricao">
+                O sabor úmido do peixe com o arroz agridoce e a cebolinha fresca se confundem com o crocante do empanado
+                e o quentinho da fritura, tornando esta porção digna de aplausos. <br />
+                O hot roll especial inclui o kani, um alimento feito à base de surimi, uma carne processada à base de
+                diversos frutos do mar.
+            </h3>
+            <button class="artigo-botao">Pedir esse prato</button>
+        </article>
+
+        <div class="container">
+            <article class="artigo">
+                <h2 class="artigo-titulo">Sushi</h2>
+                <img class="artigo-imagem" src="https://kandoo.com.br/wp-content/uploads/2018/04/sushi.jpg"
+                    alt="Foto Sushi">
+                <h3 class="artigo-descricao">Caso você seja vegetariano ou até mesmo vegano, saiba que existem muitas
+                    opções de sushi feitos apenas com frutas ou vegetais. <br />
+                    Por exemplo o sushi de manga, que leva unicamente a fruta como recheio, envolto somente pelo arroz
+                    avinagrado.
+                </h3>
+                <button class="artigo-botao">Pedir esse prato</button>
+            </article>
+
+            <div class="container">
+                <article class="artigo">
+                    <h2 class="artigo-titulo">Yakisoba</h2>
+                    <img class="artigo-imagem"
+                        src="https://www.sabornamesa.com.br/media/k2/items/cache/fe9f389134b872478c99a836d55de88e_XL.jpg"
+                        alt="Foto Yakisoba">
+                    <h3 class="artigo-descricao">
+                        O Brasil tem sua própria receita de Yakissoba, sendo que quem trouxe o prato original para cá
+                        foram os imigrantes asiáticos, por volta de 1900 e 1910. <br />
+                        Em tradução literal, o Yakissoba é um prato feito com 'macarrão grelhado'. O macarrão é
+                        preparado com a base de farinha de trigo e ovos apenas.
+                        <h3>
+                            <button class="artigo-botao">Pedir esse prato</button>
+                </article>
+
+                <div class="form" id="form">
+                    <p class="form-texto">Digite o e-mail onde deseja receber promoções
+                    </p>
+                    <form class="formulario">
+                        <fieldset class="formulario-caixa">
+                            <div class="formulario-caixa-item">
+                                <label class="formulario-caixa-item-email">E-mail:</label>
+                                <input name="email" id="email" placeholder="exemplo@seuemail.com"
+                                    class="input required">
+                            </div>
+                            <span id="span-email"></span>
+                            <div class="formulario-caixa-item">
+                                <div id="alerta">
+                                    <input type="checkbox" name="promocoes" id="checkbox" /> Aceito os termos de uso
+                                </div>
+                            </div>
+                            <span id="span-checkbox"></span>
+                        </fieldset>
+                        <button type="button" class="formulario-botao" onclick="emailTestar()">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <script src="InformacaoEmail.js"></script>
+</body>
+
+</html>

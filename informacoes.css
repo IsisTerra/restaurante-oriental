@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 90vw;
+    height: 1vh;
+    background: linear-gradient(68deg, #ffd5b3 16.62%, rgb(222, 158, 39) 85.61%);
+}
+
+a {
+    color: inherit;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 10px 100px;
+    text-shadow: 2px 2px 3px black;
+    border-bottom: 0.4px solid #FFF2E7;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+}
+
+
+.cabecalho-texto {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cabecalho-texto-inicial {
+    margin-right: 50px;
+}
+
+.artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.artigo-titulo {
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    padding: 7px;
+    border-bottom: 0.4px solid #FFF2E7;
+    text-shadow: 2px 2px 3px black;
+    margin-top: 40px;
+}
+
+.artigo-imagem {
+    width: 400px;
+    height: 300px;
+    padding: 4px;
+}
+
+.artigo-imagem:hover {
+    width: 500px;
+    height: 380px;
+    transition: 400ms linear;
+}
+
+.artigo-descricao {
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: bold;
+    padding: 4px;
+    width: 500px;
+    height: 180px;
+    border-bottom: 0.4px solid #FFF2E7;
+    text-shadow: 3px 1px 3px black;
+    text-align: center;
+    
+}
+
+.artigo-botao {
+    background-color: rgb(206, 154, 75);
+    color: #FFF2E7;
+    height: 60px;
+    width: 170px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px black;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    animation: pedir 3s ease-in-out 0s infinite alternate both;
+    cursor: pointer;
+}
+
+@keyframes pedir {
+    from {
+        background-color: rgb(206, 154, 75);
+    }
+
+    to {
+        background-color: rgb(227, 78, 3);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-texto {
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFF2E7;
+    text-shadow: 2px 1px 4px black;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 793px;
+    height: 80px;
+    padding: 4px;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+.formulario-caixa-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+.formulario-caixa-item-email {
+    opacity: 0.9;
+}
+
+#email {
+    width: 150px;
+    height: 20px;
+}
+
+.formulario-botao {
+    background-color: rgb(206, 154, 75);
+    color: #FFF2E7;
+    height: 25px;
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px black;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+
+#span-email,
+#span-checkbox,
+#alerta {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}

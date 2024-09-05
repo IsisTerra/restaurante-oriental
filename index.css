@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 158, 39);
+    padding: 10px;
+}
+
+.cabecalho-texto {
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.conteudo-principal {
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 250px 130px 10px 10px;
+    height: 400px;
+    background-color: black;
+    background-image: url("background-main.jpg");
+    background-size: 100%;
+}
+
+.conteudo-principal-texto {
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF2E7;
+    font-weight: 200;
+    font-size: 100px;
+    text-shadow: #000 2px 3px 1px;
+
+}
+
+.conteudo-principal-texto::first-letter {
+    color: orange;
+}
+
+.conteudo-secundario {
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(222, 158, 39);
+    height: 265px;
+    border-radius: 40px;
+}
+
+.conteudo-secundario-botao {
+    background-color: rgb(206, 154, 75);
+    color: #FFF2E7;
+    height: 60px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px black;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.conteudo-secundario-botao:hover {
+    opacity: 0.8;
+}

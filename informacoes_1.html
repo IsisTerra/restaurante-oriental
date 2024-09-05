@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="informacoes.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho-texto">Mirai Sushi</h2>
+        <nav class="cabecalho-texto">
+            <div class="cabecalho-texto-inicial">
+                <a href="index.html">Página Inicial</a>
+            </div>
+            <div class="cabecalho-texto-inicial">
+                <a href="cardapio.html">Cardápio</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="artigo" id="65e9ce80dc2eb24ff325159e">
+            <h2 class="artigo-titulo" id="titulo-temaki">Temaki</h2>
+            <img class="artigo-imagem"
+                src="https://static-images.ifood.com.br/image/upload/t_high/pratos/46118370-612c-40b5-8eec-1326b53b3ac7/202202162327_GGIC_i.jpg"
+                alt="Foto Temaki" id="imagem-temaki">
+            <h3 class="artigo-descricao" id="descricao-temaki">
+                E são tantas opções diferentes de temaki, que você chega a ficar perdidinho de tanto amor!
+                Mas, na indecisão, o clássico salmão com cream cheese resolve qualquer parada. <br />
+                Não esquece que você também tem a opção frita, o temaki hot!
+            </h3>
+            <button class="artigo-botao">Pedir esse prato</button>
+        </article>
+    </div>
+
+    <div class="container">
+        <article class="artigo">
+            <h2 class="artigo-titulo">Sashimi</h2>
+            <img class="artigo-imagem" src="https://us.firenews.video/wp-content/uploads/2023/12/sashimi-1024x683.jpg"
+                alt="Foto Sashimi">
+            <h3 class="artigo-descricao">
+                O corte do peixe cru é feito da esquerda para a direita, e sempre com a faca em
+                diagonal. E outra curiosidade é que as facas utilizadas são amoladas constantemente e apenas de um lado.
+                <br /> Dica extra: As fatias de peixe podem ser saboreadas com
+                shoyu e,
+                se
+                quiser,
+                com um pouco de wasabi.
+            </h3>
+            <button class="artigo-botao">Pedir esse prato</button>
+        </article>
+    </div>
+    <div class="container">
+        <article class="artigo">
+            <h2 class="artigo-titulo">Niguiri</h2>
+            <img class="artigo-imagem" src="https://www.krudofish.com/cdn/shop/products/j6rKFFTQ_600x.jpg?v=1661945791"
+                alt="Foto Niguiri">
+            <h3 class="artigo-descricao">
+                Para aproveitar o alimento da melhor forma possível, o niguiri deve ser comido inteiro para que
+                seja possível sentir as texturas e a intensidade. <br />
+                Além das opções tradicionais, oferecemos pratos vegetarianos, como é o caso do niguiri de shimeji.
+            </h3>
+            <button class="artigo-botao">Pedir esse prato</button>
+        </article>
+    </div>
+    <div class="form" id="form">
+        <p class="form-texto">Digite o e-mail onde deseja receber promoções
+        </p>
+        <form class="formulario">
+            <fieldset class="formulario-caixa">
+                <div class="formulario-caixa-item">
+                    <label class="formulario-caixa-item-email">E-mail:</label>
+                    <input name="email" id="email" placeholder="exemplo@seuemail.com" class="input required">
+                </div>
+                <span id="span-email"></span>
+                <div class="formulario-caixa-item">
+                    <div id="alerta">
+                        <input type="checkbox" name="promocoes" id="checkbox" /> Aceito os termos de uso
+                    </div>
+                </div>
+                <span id="span-checkbox"></span>
+            </fieldset>
+            <button type="button" class="formulario-botao" onclick="emailTestar()">Enviar</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="InformacaoEmail.js"></script>
+</body>
+
+</html>

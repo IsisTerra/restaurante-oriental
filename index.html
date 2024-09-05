@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirai Sushi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h5 class="cabecalho-texto">Mais do que sushi. Uma experiência gastronômica completa. </h5>
+    </header>
+
+    <main class="conteudo-principal">
+        <h1 class="conteudo-principal-texto">mirai sushi</h1>
+    </main>
+
+    <section class="conteudo-secundario">
+        <div class="conteudo-secundario-cronometro">
+            <span class="cronometro-texto">As ofertas exclusivas terminam em: </span>
+            <span onload="contagemRegressiva()" id="cronometro">00:00:00</span>
+        </div>
+        <a href="cardapio.html"> <button class="conteudo-secundario-botao">Ver o cardápio</button></a>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

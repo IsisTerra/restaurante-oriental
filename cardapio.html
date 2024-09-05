@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho-texto">Mirai Sushi</h2>
+        <nav class="cabecalho-texto">
+            <a href="index.html">Página Inicial</a>
+        </nav>
+    </header>
+
+    <main class="conteiner">
+        <section class="principal">
+            <div class="prato" id="65e9ce80dc2eb24ff325159e">
+                <img class="prato-imagem" src="temaki.jpg" alt="Foto Temaki" id="imagem-temaki">
+                <h1 class="prato-titulo" id="titulo-temaki">Temaki</h1>
+                <h3 class="prato-descricao" id="descricao-temaki"> A refeição rápida significa enrolado com a mão, sendo
+                    que “te” significa mão e “maki”, enrolado.
+                </h3>
+                <div id="botoesTemaki">
+                    <button class="prato-botao" onclick="verInformacoesTemaki()" id="btnTemaki">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <button class="prato-botao" id="btnPedirTemaki">Pedir agora</button>
+                    </a>
+                </div>
+            </div>
+            <div class="prato" id="65e9cf158be6715a394a75fd">
+                <img class="prato-imagem" src="sashimi.jpg" alt="Foto Sashimi" id="imagem-sashimi">
+                <h1 class="prato-titulo" id="titulo-sashimi">Sashimi</h1>
+                <h3 class="prato-descricao" id="descricao-sashimi">O sashimi é o famoso peixe cru cortado em fatias
+                    perfeitas e finas</h3>
+                <div id="botoesSashimi">
+                    <button class="prato-botao" onclick="verInformacoesSashimi()" id="btnSashimi">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <a href="informacoes_1.html">
+                            <button class="prato-botao" id="btnPedirSashimi">Pedir agora</button>
+                        </a>
+                </div>
+            </div>
+            <div class="prato" id="65e9cf80dc2eb24ff325159f">
+                <img class="prato-imagem" src="niguiri.jpg" alt="Foto Niguiri" id="imagem-niguiri">
+                <h1 class="prato-titulo" id="titulo-niguiri">Niguiri</h1>
+                <h3 class="prato-descricao" id="descricao-niguiri">Porção pequena de arroz e pedaços de peixes e outros
+                    frutos-do-mar por cima
+                </h3>
+                <div id="botoesNiguiri">
+                    <button class="prato-botao" onclick="verInformacoesNiguiri()" id="btnNiguiri">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <a href="informacoes_1.html">
+                            <button class="prato-botao" id="btnPedirNiguiri">Pedir agora</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="principal">
+            <div class="prato" id="65e9d0c940a364278022f880">
+                <img class="prato-imagem" src="hotroll.jpg" alt="Foto Hot Roll" id="imagem-hotRoll">
+                <h1 class="prato-titulo" id="titulo-hotRoll">Hot Roll</h1>
+                <h3 class="prato-descricao" id="descricao-hotRoll">É o sushi empanado com alga frita, crocante com
+                    farinha panko e recheios
+                    variados</h3>
+                <div id="botoesHotRoll">
+                    <button class="prato-botao" onclick="verInformacoesHotRoll()" id="btnHotRoll">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <a href="informacoes_2.html">
+                            <button class="prato-botao" id="btnPedirHotRoll">Pedir agora</button>
+                        </a>
+                </div>
+            </div>
+            <div class="prato" id="65e9d12f40a364278022f881">
+                <img class="prato-imagem" src="sushi.jpg" alt="Foto Sushi" id="imagem-sushi">
+                <h1 class="prato-titulo" id="titulo-sushi">Sushi</h1>
+                <h3 class="prato-descricao" id="descricao-sushi">Alga nori envolvendo uma camada de arroz recheada de
+                    peixe cru, camarão ou
+                    legumes</h3>
+                <div id="botoesSushi">
+                    <button class="prato-botao" onclick="verInformacoesSushi()" id="btnSushi">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <a href="informacoes_2.html">
+                            <button class="prato-botao" id="btnPedirSushi">Pedir agora</button>
+                        </a>
+                </div>
+            </div>
+            <div class="prato" id="65e9d1a7dc8bb23fd629d1e6">
+                <img class="prato-imagem" src="yakisoba.jpg" alt="Foto Yakisoba" id="imagem-yakisoba">
+                <h1 class="prato-titulo" id="titulo-yakisoba">Yakisoba</h1>
+                <h3 class="prato-descricao" id="descricao-yakisoba">Macarrão com legumes, regado com shoyu com opções de
+                    carne e frango</h3>
+                <div id="botoesYakisoba">
+                    <button class="prato-botao" onclick="verInformacoesYakisoba()" id="btnYakisoba">Detalhes</button>
+                    <a href="informacoes_1.html">
+                        <a href="informacoes_2.html">
+                            <button class="prato-botao" id="btnPedirYakisoba">Pedir agora</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="cardapio.js"></script>
+</body>
+
+</html>
