@@ -5,14 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+} */
 
-body {
+ body {
     width: 90vw;
     height: 1vh;
     background: linear-gradient(68deg, #ffd5b3 16.62%, rgb(222, 158, 39) 85.61%);
 }
-
+ 
 a {
     color: inherit;
 }
@@ -25,7 +25,6 @@ a {
     padding: 10px 100px 10px 100px;
     text-shadow: 2px 2px 3px black;
     border-bottom: 0.4px solid #FFF2E7;
-    position: fixed;
     right: 0px;
     left: 0px;
 }

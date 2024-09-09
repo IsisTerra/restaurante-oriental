@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio</title>
+    <link rel="stylesheet" href="informacoes.css">
     <link rel="stylesheet" href="cardapio.css">
     <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
 </head>
@@ -26,7 +27,7 @@
                 </h3>
                 <div id="botoesTemaki">
                     <button class="prato-botao" onclick="verInformacoesTemaki()" id="btnTemaki">Detalhes</button>
-                    <a href="informacoes_1.html">
+                    <a href=#>
                         <button class="prato-botao" id="btnPedirTemaki">Pedir agora</button>
                     </a>
                 </div>
@@ -38,8 +39,7 @@
                     perfeitas e finas</h3>
                 <div id="botoesSashimi">
                     <button class="prato-botao" onclick="verInformacoesSashimi()" id="btnSashimi">Detalhes</button>
-                    <a href="informacoes_1.html">
-                        <a href="informacoes_1.html">
+                        <a href=#>
                             <button class="prato-botao" id="btnPedirSashimi">Pedir agora</button>
                         </a>
                 </div>
@@ -52,8 +52,7 @@
                 </h3>
                 <div id="botoesNiguiri">
                     <button class="prato-botao" onclick="verInformacoesNiguiri()" id="btnNiguiri">Detalhes</button>
-                    <a href="informacoes_1.html">
-                        <a href="informacoes_1.html">
+                        <a href=#>
                             <button class="prato-botao" id="btnPedirNiguiri">Pedir agora</button>
                         </a>
                 </div>
@@ -68,8 +67,7 @@
                     farinha panko e frito, os recheios são variados</h3>
                 <div id="botoesHotRoll">
                     <button class="prato-botao" onclick="verInformacoesHotRoll()" id="btnHotRoll">Detalhes</button>
-                    <a href="informacoes_1.html">
-                        <a href="informacoes_2.html">
+                        <a href=#>
                             <button class="prato-botao" id="btnPedirHotRoll">Pedir agora</button>
                         </a>
                 </div>
@@ -82,8 +80,7 @@
                     legumes</h3>
                 <div id="botoesSushi">
                     <button class="prato-botao" onclick="verInformacoesSushi()" id="btnSushi">Detalhes</button>
-                    <a href="informacoes_1.html">
-                        <a href="informacoes_2.html">
+                        <a href=#>
                             <button class="prato-botao" id="btnPedirSushi">Pedir agora</button>
                         </a>
                 </div>
@@ -95,16 +92,39 @@
                     carne e frango</h3>
                 <div id="botoesYakisoba">
                     <button class="prato-botao" onclick="verInformacoesYakisoba()" id="btnYakisoba">Detalhes</button>
-                    <a href="informacoes_1.html">
-                        <a href="informacoes_2.html">
+                        <a href=#>
                             <button class="prato-botao" id="btnPedirYakisoba">Pedir agora</button>
                         </a>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="form" id="form">
+                <p class="form-texto">Digite o e-mail onde deseja receber promoções
+                </p>
+                <form class="formulario">
+                    <fieldset class="formulario-caixa">
+                        <div class="formulario-caixa-item">
+                            <label class="formulario-caixa-item-email">E-mail:</label>
+                            <input name="email" id="email" placeholder="exemplo@seuemail.com" class="input required">
+                        </div>
+                        <span id="span-email"></span>
+                        <div class="formulario-caixa-item">
+                            <div id="alerta">
+                                <input type="checkbox" name="promocoes" id="checkbox" /> Aceito os termos de uso
+                            </div>
+                        </div>
+                        <span id="span-checkbox"></span>
+                    </fieldset>
+                    <button type="button" class="formulario-botao" onclick="emailTestar()">Enviar</button>
+                </form>
+            </div>
+        </footer>
     </main>
 
     <script src="cardapio.js"></script>
+    <script src="InformacaoEmail.js"></script>
+
 </body>
 
 </html>
